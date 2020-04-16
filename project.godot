@@ -1,0 +1,43 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="MacDrive"
+run/main_scene="res://main.tscn"
+run/low_processor_mode=true
+config/icon="res://icon.png"
+
+[autoload]
+
+service="*res://service.gd"
+
+[debug]
+
+settings/fps/force_fps=60
+
+[display]
+
+window/vsync/use_vsync=false
+window/stretch/aspect="expand"
+
+[rendering]
+
+quality/2d/gles2_use_nvidia_rect_flicker_workaround=true
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+quality/shadows/filter_mode=2
+quality/filters/msaa=2
+environment/default_environment="res://default_env.tres"
